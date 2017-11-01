@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noone nearby" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bz-HD-Gmc">
+                    <rect key="frame" x="41" y="225" width="241" height="109"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8s5-87-2X5">
+                    <rect key="frame" x="41" y="337" width="241" height="45"/>
+                    <color key="backgroundColor" red="0.11757028847932816" green="0.58173424005508423" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="G8Q-rs-BPe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="Invite your Heroes">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8s5-87-2X5" secondAttribute="bottom" constant="186" id="1Bn-xT-0Lt"/>
+                <constraint firstItem="8s5-87-2X5" firstAttribute="top" secondItem="2bz-HD-Gmc" secondAttribute="bottom" constant="3" id="1rk-A7-sd3"/>
+                <constraint firstItem="8s5-87-2X5" firstAttribute="width" secondItem="2bz-HD-Gmc" secondAttribute="width" id="Ji5-Sh-DXj"/>
+                <constraint firstItem="2bz-HD-Gmc" firstAttribute="bottom" secondItem="8s5-87-2X5" secondAttribute="top" id="Stn-e1-uRu"/>
+                <constraint firstAttribute="trailing" secondItem="8s5-87-2X5" secondAttribute="trailing" constant="38" id="TH0-g1-DSJ"/>
+                <constraint firstItem="2bz-HD-Gmc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="225" id="ff4-P3-L7E"/>
+                <constraint firstItem="8s5-87-2X5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="41" id="gpV-6V-9u2"/>
+                <constraint firstItem="2bz-HD-Gmc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="41" id="oYg-5o-UTA"/>
+                <constraint firstAttribute="trailing" secondItem="2bz-HD-Gmc" secondAttribute="trailing" constant="38" id="qcC-29-9bK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Stn-e1-uRu"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="238" y="188"/>
+        </view>
+    </objects>
+</document>

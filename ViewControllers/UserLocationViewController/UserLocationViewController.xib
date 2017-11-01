@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserLocationViewController">
+            <connections>
+                <outlet property="radus" destination="wy3-UF-k1s" id="Kz3-Hr-L5y"/>
+                <outlet property="view" destination="V2v-mt-NCj" id="fDD-Hl-KrD"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="V2v-mt-NCj">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykK-17-DSe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wy3-UF-k1s">
+                            <rect key="frame" x="44" y="244" width="237" height="108"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow nearHero to access your location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L2-3V-PqD">
+                                    <rect key="frame" x="15" y="30" width="206" height="49"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                    <color key="textColor" red="0.38823529410000002" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="0L2-3V-PqD" firstAttribute="leading" secondItem="wy3-UF-k1s" secondAttribute="leading" constant="15" id="D6w-we-d2m"/>
+                                <constraint firstItem="0L2-3V-PqD" firstAttribute="top" secondItem="wy3-UF-k1s" secondAttribute="top" constant="30" id="K6a-qT-ioY"/>
+                                <constraint firstItem="0L2-3V-PqD" firstAttribute="centerY" secondItem="wy3-UF-k1s" secondAttribute="centerY" id="OJL-Qf-vzz"/>
+                                <constraint firstItem="0L2-3V-PqD" firstAttribute="centerX" secondItem="wy3-UF-k1s" secondAttribute="centerX" id="Q1Q-Vh-1ia"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcX-F9-lOQ">
+                            <rect key="frame" x="44" y="359" width="237" height="52"/>
+                            <color key="backgroundColor" red="0.043137254899999998" green="0.37254901959999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="r14-of-HBv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <state key="normal" title="Allow">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="moveToHomeScreen:" destination="-1" eventType="touchUpInside" id="nC6-sg-Ccf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qcX-F9-lOQ" firstAttribute="top" secondItem="wy3-UF-k1s" secondAttribute="bottom" constant="7" id="2LU-wW-Bmy"/>
+                        <constraint firstItem="wy3-UF-k1s" firstAttribute="leading" secondItem="ykK-17-DSe" secondAttribute="leading" constant="44" id="6uI-LJ-Xvo"/>
+                        <constraint firstItem="wy3-UF-k1s" firstAttribute="trailing" secondItem="qcX-F9-lOQ" secondAttribute="trailing" id="FKT-yG-Vdd"/>
+                        <constraint firstItem="wy3-UF-k1s" firstAttribute="leading" secondItem="qcX-F9-lOQ" secondAttribute="leading" id="Saa-Wb-O6l"/>
+                        <constraint firstItem="wy3-UF-k1s" firstAttribute="top" secondItem="ykK-17-DSe" secondAttribute="top" constant="244" id="bLE-ya-Fq0"/>
+                        <constraint firstAttribute="bottom" secondItem="qcX-F9-lOQ" secondAttribute="bottom" constant="157" id="rMF-D0-6hw"/>
+                        <constraint firstAttribute="trailing" secondItem="wy3-UF-k1s" secondAttribute="trailing" constant="39" id="wXg-GJ-4jG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ykK-17-DSe" firstAttribute="top" secondItem="V2v-mt-NCj" secondAttribute="top" id="153-Jd-yl2"/>
+                <constraint firstAttribute="bottom" secondItem="ykK-17-DSe" secondAttribute="bottom" id="Rbh-xR-u1Y"/>
+                <constraint firstItem="ykK-17-DSe" firstAttribute="leading" secondItem="V2v-mt-NCj" secondAttribute="leading" id="hIA-re-N13"/>
+                <constraint firstAttribute="trailing" secondItem="ykK-17-DSe" secondAttribute="trailing" id="wY1-pp-rqv"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>

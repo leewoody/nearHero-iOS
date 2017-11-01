@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportViewController">
+            <connections>
+                <outlet property="reportView" destination="sjb-q3-HxH" id="0eJ-TF-Tr2"/>
+                <outlet property="transView" destination="A1V-eV-ife" id="CTd-pl-IA9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1V-eV-ife">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxx-qK-lBl">
+                            <rect key="frame" x="31" y="187" width="258" height="174"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="We take user feedback seriously. Thank you for your report. We will contact you within 48 hours." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjb-q3-HxH">
+                                    <rect key="frame" x="22" y="27" width="214" height="120"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="3SJ-pA-Ft2"/>
+                                    </constraints>
+                                    <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                    <color key="textColor" red="0.18431372549019609" green="0.21568627450980393" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="sjb-q3-HxH" firstAttribute="leading" secondItem="Oxx-qK-lBl" secondAttribute="leading" constant="22" id="6VZ-O9-fkC"/>
+                                <constraint firstItem="sjb-q3-HxH" firstAttribute="centerY" secondItem="Oxx-qK-lBl" secondAttribute="centerY" id="FWQ-Nt-L2E"/>
+                                <constraint firstAttribute="height" constant="174" id="Qqj-Nf-unh"/>
+                                <constraint firstAttribute="trailing" secondItem="sjb-q3-HxH" secondAttribute="trailing" constant="22" id="uVI-QZ-8ET"/>
+                                <constraint firstItem="sjb-q3-HxH" firstAttribute="centerX" secondItem="Oxx-qK-lBl" secondAttribute="centerX" id="y7G-nV-7jh"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Oxx-qK-lBl" firstAttribute="leading" secondItem="A1V-eV-ife" secondAttribute="leading" constant="31" id="GKu-FB-dWb"/>
+                        <constraint firstAttribute="trailing" secondItem="Oxx-qK-lBl" secondAttribute="trailing" constant="31" id="NOY-Vz-DXe"/>
+                        <constraint firstItem="Oxx-qK-lBl" firstAttribute="centerY" secondItem="A1V-eV-ife" secondAttribute="centerY" constant="-10" id="Z8n-Cc-mT0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBi-vQ-ers">
+                    <rect key="frame" x="31" y="369" width="258" height="52"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="LSu-6b-7V9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" red="0.38823529410000002" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="okBtnAction:" destination="-1" eventType="touchDown" id="PFI-6A-NrU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="A1V-eV-ife" secondAttribute="bottom" id="4tF-1W-CcJ"/>
+                <constraint firstAttribute="trailing" secondItem="A1V-eV-ife" secondAttribute="trailing" id="CJE-4c-WPd"/>
+                <constraint firstAttribute="trailing" secondItem="WBi-vQ-ers" secondAttribute="trailing" constant="31" id="Il5-WY-C9m"/>
+                <constraint firstItem="WBi-vQ-ers" firstAttribute="top" secondItem="Oxx-qK-lBl" secondAttribute="bottom" constant="8" id="KIr-IX-ijw"/>
+                <constraint firstItem="A1V-eV-ife" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eBf-7a-2oS"/>
+                <constraint firstItem="WBi-vQ-ers" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="mv8-NT-RrI"/>
+                <constraint firstItem="A1V-eV-ife" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qqy-dh-fna"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="580" y="-26"/>
+        </view>
+    </objects>
+</document>

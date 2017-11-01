@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="XMPPMessageArchiving_Contact_CoreDataObject" representedClassName="XMPPMessageArchiving_Contact_CoreDataObject" syncable="YES">
+        <attribute name="bareJid" optional="YES" transient="YES" syncable="YES"/>
+        <attribute name="bareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="encryptedId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mostRecentMessageBody" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mostRecentMessageOutgoing" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mostRecentMessageTimestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="streamBareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="XMPPMessageArchiving_Message_CoreDataObject" representedClassName="XMPPMessageArchiving_Message_CoreDataObject" syncable="YES">
+        <attribute name="bareJid" optional="YES" transient="YES" syncable="YES"/>
+        <attribute name="bareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="composing" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="delivered" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="encryptedId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" transient="YES" syncable="YES"/>
+        <attribute name="messageStr" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="outgoing" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="streamBareJidStr" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="thread" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="XMPPMessageArchiving_Contact_CoreDataObject" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="XMPPMessageArchiving_Message_CoreDataObject" positionX="160" positionY="192" width="128" height="240"/>
+    </elements>
+</model>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "78B25CD802841DED12E853FC7FD725582F67744C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "86FA3F3AF35659104B2709B2D81966974DE58A6F" : 0,
+    "78B25CD802841DED12E853FC7FD725582F67744C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "07C1D97B-CB40-4966-AF17-0E56879CE63B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "86FA3F3AF35659104B2709B2D81966974DE58A6F" : "..\/inkozi",
+    "78B25CD802841DED12E853FC7FD725582F67744C" : "nearhero-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "nearhero",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "nearhero\/nearhero.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/dilawerhussain\/nearhero-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78B25CD802841DED12E853FC7FD725582F67744C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/dilawerhussain\/inkozi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "86FA3F3AF35659104B2709B2D81966974DE58A6F"
+    }
+  ]
+}

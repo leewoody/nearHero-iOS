@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="containerView" destination="BWr-vL-eLg" id="2Cv-z5-xZn"/>
+                <outlet property="searchDisplayController" destination="usR-9y-JVs" id="nJW-Q7-jXC"/>
+                <outlet property="searchTableView" destination="pra-ym-giN" id="w8r-xb-EtT"/>
+                <outlet property="searchView" destination="cbZ-TC-miD" id="PuT-Ue-jdV"/>
+                <outlet property="suggestions" destination="YMk-IR-5xg" id="eUk-KY-Mpo"/>
+                <outlet property="topView" destination="dSN-vK-qdG" id="1jg-nL-qBU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWr-vL-eLg">
+                    <frame key="frameInset" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAw-Zz-ozl">
+                            <frame key="frameInset" minY="93" width="320" height="88"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNA-gv-wPi">
+                                    <frame key="frameInset" minX="274" minY="25" width="38" height="38"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="89Y-Dg-Ker"/>
+                                        <constraint firstAttribute="width" constant="38" id="AM9-QM-JZi"/>
+                                    </constraints>
+                                    <state key="normal" image="cancel.png"/>
+                                    <connections>
+                                        <action selector="cancelBtnAction:" destination="-1" eventType="touchUpInside" id="5lQ-Ud-9J8"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="nNA-gv-wPi" firstAttribute="top" secondItem="AAw-Zz-ozl" secondAttribute="top" constant="25" id="M0Q-1K-gV5"/>
+                                <constraint firstAttribute="trailing" secondItem="nNA-gv-wPi" secondAttribute="trailing" constant="8" id="olp-d1-cxc"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for professionals nearby" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbZ-TC-miD">
+                            <frame key="frameInset" minX="16" minY="93" width="245" height="83"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="YJS-8F-zav">
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLD-hT-zKl">
+                            <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Search"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiI-Ja-xsU">
+                            <frame key="frameInset" minX="144" minY="402" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="test"/>
+                        </button>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bF0-Xj-tJ4">
+                            <frame key="frameInset" minY="500" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="H3N-Rt-Rxq"/>
+                            </connections>
+                        </searchBar>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eln-yY-gSj">
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J1K-Fy-RDE">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="87" id="ofl-tR-ccS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOi-KX-2bR">
+                            <frame key="frameInset" minX="16" minY="172" width="288" height="1"/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.90588235289999997" blue="0.91764705879999997" alpha="0.46655722776073622" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pra-ym-giN">
+                            <frame key="frameInset" minY="218" width="320" height="350"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSN-vK-qdG">
+                            <frame key="frameInset" width="320" height="94"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ms0-gx-hKv">
+                            <frame key="frameInset" minY="179" width="320" height="41"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suggestions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMk-IR-5xg">
+                                    <frame key="frameInset" minX="16" minY="10" width="83" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="dSN-vK-qdG" firstAttribute="leading" secondItem="BWr-vL-eLg" secondAttribute="leading" id="2GY-D0-OfK"/>
+                        <constraint firstAttribute="trailing" secondItem="qOi-KX-2bR" secondAttribute="trailing" constant="16" id="2cI-cS-dbe"/>
+                        <constraint firstItem="YJS-8F-zav" firstAttribute="bottom" secondItem="pra-ym-giN" secondAttribute="top" id="4oe-Fr-NLq"/>
+                        <constraint firstItem="eln-yY-gSj" firstAttribute="leading" secondItem="BWr-vL-eLg" secondAttribute="leading" id="6XP-vu-bZP"/>
+                        <constraint firstAttribute="bottom" secondItem="pra-ym-giN" secondAttribute="bottom" id="7vN-jD-Qvg"/>
+                        <constraint firstItem="AAw-Zz-ozl" firstAttribute="bottom" secondItem="cbZ-TC-miD" secondAttribute="bottom" constant="5" id="7yg-0w-2Ra"/>
+                        <constraint firstAttribute="trailing" secondItem="Ms0-gx-hKv" secondAttribute="trailing" id="8Hy-W5-J8J"/>
+                        <constraint firstItem="dSN-vK-qdG" firstAttribute="top" secondItem="BWr-vL-eLg" secondAttribute="top" id="8Yj-Rl-qp6"/>
+                        <constraint firstItem="pra-ym-giN" firstAttribute="top" secondItem="Ms0-gx-hKv" secondAttribute="bottom" constant="-2" id="9rT-9J-SI4"/>
+                        <constraint firstItem="AAw-Zz-ozl" firstAttribute="top" secondItem="cbZ-TC-miD" secondAttribute="top" id="DVl-4b-RWQ"/>
+                        <constraint firstItem="Ms0-gx-hKv" firstAttribute="leading" secondItem="BWr-vL-eLg" secondAttribute="leading" id="Dqm-83-FXX"/>
+                        <constraint firstItem="YJS-8F-zav" firstAttribute="top" secondItem="BWr-vL-eLg" secondAttribute="top" constant="44" id="EYq-Rw-IFq"/>
+                        <constraint firstItem="YJS-8F-zav" firstAttribute="leading" secondItem="pra-ym-giN" secondAttribute="leading" id="Ecx-3R-JtL"/>
+                        <constraint firstItem="pra-ym-giN" firstAttribute="top" secondItem="cbZ-TC-miD" secondAttribute="bottom" constant="42" id="GgJ-21-1D5"/>
+                        <constraint firstItem="pra-ym-giN" firstAttribute="top" secondItem="tLD-hT-zKl" secondAttribute="bottom" constant="8" symbolic="YES" id="IKY-tf-Txt"/>
+                        <constraint firstItem="tLD-hT-zKl" firstAttribute="leading" secondItem="eln-yY-gSj" secondAttribute="trailing" constant="13" id="KmH-tC-PtW"/>
+                        <constraint firstItem="eln-yY-gSj" firstAttribute="top" secondItem="BWr-vL-eLg" secondAttribute="top" constant="95" id="NEm-wA-ZVX"/>
+                        <constraint firstItem="cbZ-TC-miD" firstAttribute="top" secondItem="dSN-vK-qdG" secondAttribute="bottom" constant="-1" id="Ru7-vd-o6Z"/>
+                        <constraint firstItem="pra-ym-giN" firstAttribute="leading" secondItem="BWr-vL-eLg" secondAttribute="leading" id="ToD-gP-GNk"/>
+                        <constraint firstItem="qOi-KX-2bR" firstAttribute="top" secondItem="cbZ-TC-miD" secondAttribute="bottom" constant="-4" id="UWd-nL-cuj"/>
+                        <constraint firstItem="pra-ym-giN" firstAttribute="top" secondItem="BWr-vL-eLg" secondAttribute="top" constant="218" id="Ufu-R5-oN0"/>
+                        <constraint firstAttribute="trailing" secondItem="pra-ym-giN" secondAttribute="trailing" id="ZxB-pL-zRq"/>
+                        <constraint firstItem="YJS-8F-zav" firstAttribute="trailing" secondItem="pra-ym-giN" secondAttribute="trailing" id="bLX-UL-5w6"/>
+                        <constraint firstItem="cbZ-TC-miD" firstAttribute="leading" secondItem="BWr-vL-eLg" secondAttribute="leading" constant="16" id="by6-rl-qpS"/>
+                        <constraint firstItem="J1K-Fy-RDE" firstAttribute="leading" secondItem="dSN-vK-qdG" secondAttribute="leading" id="cve-Bu-NTe"/>
+                        <constraint firstItem="qOi-KX-2bR" firstAttribute="leading" secondItem="BWr-vL-eLg" secondAttribute="leading" constant="16" id="hWb-ou-rmP"/>
+                        <constraint firstItem="AAw-Zz-ozl" firstAttribute="leading" secondItem="Ms0-gx-hKv" secondAttribute="leading" id="hn1-RH-2a8"/>
+                        <constraint firstItem="Ms0-gx-hKv" firstAttribute="top" secondItem="cbZ-TC-miD" secondAttribute="bottom" constant="3" id="jPU-e8-1pF"/>
+                        <constraint firstItem="tLD-hT-zKl" firstAttribute="top" secondItem="BWr-vL-eLg" secondAttribute="top" constant="101" id="mix-0M-7QM"/>
+                        <constraint firstItem="J1K-Fy-RDE" firstAttribute="top" secondItem="dSN-vK-qdG" secondAttribute="bottom" id="mwL-1I-be2"/>
+                        <constraint firstItem="AAw-Zz-ozl" firstAttribute="trailing" secondItem="Ms0-gx-hKv" secondAttribute="trailing" id="nSd-Hb-3gH"/>
+                        <constraint firstAttribute="trailing" secondItem="cbZ-TC-miD" secondAttribute="trailing" constant="59" id="qUG-qx-v41"/>
+                        <constraint firstAttribute="trailing" secondItem="eln-yY-gSj" secondAttribute="trailing" constant="78" id="sOh-Yb-M5H"/>
+                        <constraint firstItem="Ms0-gx-hKv" firstAttribute="top" secondItem="qOi-KX-2bR" secondAttribute="bottom" constant="6" id="wgm-Xs-63h"/>
+                        <constraint firstItem="pra-ym-giN" firstAttribute="top" secondItem="dSN-vK-qdG" secondAttribute="bottom" constant="124" id="xaV-Vn-TEc"/>
+                        <constraint firstItem="J1K-Fy-RDE" firstAttribute="trailing" secondItem="dSN-vK-qdG" secondAttribute="trailing" id="xiN-7q-G0H"/>
+                        <constraint firstAttribute="trailing" secondItem="dSN-vK-qdG" secondAttribute="trailing" id="zap-Pj-VAj"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="YJS-8F-zav"/>
+                            <exclude reference="tLD-hT-zKl"/>
+                            <exclude reference="tiI-Ja-xsU"/>
+                            <exclude reference="bF0-Xj-tJ4"/>
+                            <exclude reference="eln-yY-gSj"/>
+                            <exclude reference="J1K-Fy-RDE"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BWr-vL-eLg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="C9Z-Xv-Pdw"/>
+                <constraint firstAttribute="bottom" secondItem="BWr-vL-eLg" secondAttribute="bottom" id="K9K-PK-b94"/>
+                <constraint firstItem="BWr-vL-eLg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lYS-HT-KeC"/>
+                <constraint firstAttribute="trailing" secondItem="BWr-vL-eLg" secondAttribute="trailing" id="lcs-eW-Qq4"/>
+            </constraints>
+            <point key="canvasLocation" x="-1218" y="171"/>
+        </view>
+        <searchDisplayController id="usR-9y-JVs">
+            <connections>
+                <outlet property="delegate" destination="-1" id="ZJC-Kl-bRv"/>
+                <outlet property="searchBar" destination="bF0-Xj-tJ4" id="SAd-4T-cWY"/>
+                <outlet property="searchContentsController" destination="-1" id="DKH-Sx-utf"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="N7B-wk-Y1W"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="UD1-Ac-VDy"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="cancel.png" width="37" height="37"/>
+    </resources>
+</document>
